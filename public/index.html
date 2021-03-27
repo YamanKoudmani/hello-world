@@ -12,6 +12,17 @@
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+    <div id="adobe-dc-view" style="width: 800px; margin: 0 auto;"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+		var adobeDCView = new AdobeDC.View({clientId: "fe97429041104742ac6206f3ab5ceddc", divId: "adobe-dc-view"});
+		adobeDCView.previewFile({
+			content:{location: {url: "https://dl.dropbox.com/s/lwb4o6zcu76pml1/YK%20Resume%202021.pdf"}},
+			metaData:{fileName: "YK Resume 2021.pdf"}
+		}, {embedMode: "IN_LINE"});
+	});
+</script>
     <!-- built files will be auto injected -->
   </body>
 </html>

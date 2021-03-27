@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Yaman Koudmani" bio="Yaman Koudmani is a Computer Science student who loves tinkering with new technologies. He spends most of his time working on various computer projects, whether it is tinkering with new Operating Systems or repairing old computers, he finds joy in discovering new things in the realm of technology. This is just basic text as the website is still under construction used to test spacing. Thanks for visiting."/>
+    <img src="./assets/Yaman.jpg">
   </div>
 </template>
 
@@ -24,5 +24,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+img {
+  border-radius: 25%;
 }
 </style>
